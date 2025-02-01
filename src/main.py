@@ -69,7 +69,9 @@ async def get_wallet_info(
     )
 
 
-@app.get("/wallet_logs", response_model=WalletLogResponseList)
+@app.get("/wallet_logs",
+         response_model=WalletLogResponseList,
+         description="Получение логов по запросу о кошельках",)
 async def get_wallet_logs(
         limit: int = 10,
         offset: int = 0,

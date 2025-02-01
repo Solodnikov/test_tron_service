@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 
 class WalletRequest(BaseModel):
-    wallet_address: str
+    wallet_address: str = "TZ4UXDV5ZhNW7fb2AMSbgfAEZ7hWsnYS2g"
 
 
 class WalletResponse(BaseModel):
